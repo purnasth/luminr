@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div>
-      Hello, Luminr.co from Purna
-    </div>
+    <>
+      <Hero />
+    </>
   );
-}
+};
 
 export default App;

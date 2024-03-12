@@ -1,3 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  body {
+    @apply text-luminr-white;
+  }
+
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* @apply font-playfair; */
+    /* @apply font-rambla; */
+    @apply font-kalnia;
+  }
+
+  section,
+  div,
+  p,
+  span,
+  label,
+  a,
+  input,
+  textarea,
+  button {
+    @apply font-rambla;
+    /* @apply font-inria; */
+  }
+  p {
+    @apply text-xl;
+  }
+
+  .text-gradient {
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #e49676 0.89%,
+      #e49676 17.23%,
+      #e49676 42.04%,
+      #db6332 55.12%,
+      #db6332 71.54%,
+      #e24f12 100%
+    );
+    /* background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    ); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .bg-gradient {
+    background: linear-gradient(
+      157.81deg,
+      #f2f3d9 -43.27%,
+      #bef3f5 -21.24%,
+      #9dedf0 12.19%,
+      #7de7eb 29.82%,
+      #5ce1e6 51.94%,
+      #db6332 90.29%
+    );
+  }
+
+  .orange__gradient {
+    background: linear-gradient(90deg, #ecac93 0%, #db6332 100%);
+    filter: blur(900px);
+  }
+
+  .white__gradient {
+    @apply bg-[rgba(242,243,217,0.5)];
+    filter: blur(750px);
+  }
+
+  .dark__gradient {
+    background: linear-gradient(180deg, #ecac93 0%, #070a0f 100%);
+    filter: blur(123px);
+  }
+}
