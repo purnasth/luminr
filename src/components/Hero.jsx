@@ -30,7 +30,7 @@ const Hero = () => {
                   </div>
                 );
               })}
-              <button class="group relative rounded-full p-px text-2xl font-semibold leading-6 shadow-xl shadow-zinc-950 text-luminr-white">
+              <button class="group relative rounded-full p-px text-xl font-semibold leading-6 shadow-xl shadow-zinc-950 text-luminr-white">
                 <span class="absolute inset-0 overflow-hidden">
                   <span class="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(219,99,50,1)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
                 </span>

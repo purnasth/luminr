@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="fixed top-4 w-full z-50">
       <div className="container">
         {/* <div className="w-full flex items-center justify-between backdrop-blur-md border border-luminr-white/[0.16] px-4 py-2 rounded-full "> */}
-        <div className="flex items-center justify-between text-luminr-white gap-4 mx-auto border border-luminr-white/[0.16] px-4 py-2 rounded-lg backdrop-blur-md z-50">
+        <div className="flex items-center justify-between text-luminr-white gap-4 mx-auto border border-luminr-white/[0.16] px-4 py-3 rounded-lg backdrop-blur-md z-50">
           <a href="/">
             <img
               src={luminr}
@@ -40,7 +40,7 @@ const Navbar = () => {
             Hop on a call
           </button> */}
 
-          <Appointment/>
+          <Appointment />
         </div>
       </div>
     </nav>
