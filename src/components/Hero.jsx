@@ -35,7 +35,7 @@ const Hero = () => {
                   <span class="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(219,99,50,1)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
                 </span>
                 <div class="relative z-10 rounded-full bg-gradient-to-b from-zinc-800 to-zinc-900 px-6 py-4 ring-1 ring-white/10 flex items-center space-x-2">
-                  <span>Appointment</span>
+                  <span clas>Appointment</span>
                 </div>
                 <span class="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-[rgb(219,99,50)] to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
               </button>
@@ -44,8 +44,11 @@ const Hero = () => {
             <div className="flex-1 relative">
               <img
                 src={heroSVG}
-                alt=""
-                className="w-full h-full object-contain z-20 scale-90 select-none pointer-events-none "
+                alt="Hero"
+                draggable="false"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-contain z-20 scale-90 select-none"
               />
               {/* <div className="absolute top-0 z-[0] w-2/5 h-1/3 pink__gradient" /> */}
               {/* <div className="absolute bottom-40 z-[1] w-3/4 h-3/4 white__gradient" /> */}

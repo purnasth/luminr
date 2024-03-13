@@ -70,7 +70,7 @@
   }
 
   .bg-gradient {
-    background: linear-gradient(
+    /* background: linear-gradient(
       157.81deg,
       #f2f3d9 -43.27%,
       #bef3f5 -21.24%,
@@ -78,7 +78,17 @@
       #7de7eb 29.82%,
       #5ce1e6 51.94%,
       #db6332 90.29%
+    ); */
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #ecac93 0.89%,
+      #e49676 17.23%,
+      #e49676 42.04%,
+      #db6332 55.12%,
+      #db6332 71.54%,
+      #e24f12 100%
     );
+    /* filter: blur(10px); */
   }
 
   .orange__gradient {
