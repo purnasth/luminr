@@ -2,6 +2,7 @@ import React from "react";
 import LearnMore from "./LearnMore";
 import web from "../assets/web.svg";
 import seo from "../assets/seo.svg";
+import ScrollReveal from "./ScrollReveal";
 
 const Services = () => {
   return (
@@ -12,13 +13,12 @@ const Services = () => {
             <h2 className="text-4xl mb-8 font-inria uppercase leading-tight tracking-wide text-gradient">
               Services
             </h2>
-            <h4 className="text-5xl leading-normal font-medium mb-4">
-              Refine Your Digital Presence:{" "}
-              <span className="font-kalnia text-gradient">
-                {" "}
-                Web Design & SEO Specializations
-              </span>
-            </h4>
+            <ScrollReveal
+              text1="Refine Your Digital Presence:"
+              text2="Web Design & SEO Specializations"
+              textColor="luminr-white"
+              highlightColor="gradient"
+            />
           </div>
           <div className="relative flex h-full w-full px-8 lg:space-x-10">
             <div className="h-full w-0 lg:w-[4%]" />

@@ -17,6 +17,7 @@ export default {
         "luminr-blue": "#070a0f",
         "luminr-orange": "#DB6332",
         "luminr-white": "#F2F3D9",
+        "gradient-orange": ["rgba(255, 165, 0, 1)", "rgba(255, 165, 0, 0)"],
       },
     },
   },
