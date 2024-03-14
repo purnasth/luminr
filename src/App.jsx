@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
-import Test from "./components/Test";
+import Benefits from "./components/Benefits";
 
 const App = () => {
   return (
@@ -10,7 +10,8 @@ const App = () => {
       <Navbar />
       <Hero />
       <Services />
-      <Test />
+      {/* <Test /> */}
+      <Benefits />
     </>
   );
 };

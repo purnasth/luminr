@@ -10,7 +10,7 @@ const Services = () => {
       <section className="h-full py-20 transition duration-1000 bg-luminr-blue">
         <div className="container">
           <div className="max-w-5xl mx-auto text-center pb-40">
-            <h2 className="text-4xl mb-8 font-inria uppercase leading-tight tracking-wide text-gradient">
+            <h2 className="text-2xl mb-4 font-rambla leading-7 tracking-wide text-gradient font-semibold">
               Services
             </h2>
             <ScrollReveal
