@@ -13,6 +13,11 @@
     @apply text-luminr-white;
   }
 
+  section 
+  {
+    @apply py-28 px-4;
+  }
+
   .flexCenter {
     @apply flex justify-center items-center;
   }

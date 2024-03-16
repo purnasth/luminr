@@ -78,3 +78,33 @@ export const benefitsData = [
       "We go beyond services, crafting a holistic online experience that resonates with your audience, making your brand memorable and influential.",
   },
 ];
+
+export const testimonialContents = [
+  {
+    id: "testimonialSection",
+    title: "Valued guest feedback",
+    subtitle: "",
+    subheading:
+      "Positive feedback and a simple thank you go a long way. It motivates us to provide world-class hospitality to our guests.",
+    testimonials: [
+      {
+        id: 1,
+        content:
+          "Working with Luminr on our landing pages design and development was a game-changer for us. Prayatna and the team not only understood our brand vision but elevated it to new heights. Their creativity, attention to detail, and commitment to excellence set them apart. Highly recommended.",
+        author: "Hussain Shekh",
+        position: "CEO, Brand Spark Visuals",
+        image:
+          "https://luminr.co/_next/static/media/hussian_shekh.f3c80ae1.webp",
+      },
+      {
+        id: 2,
+        content:
+          "Working with Luminr on our landing pages design and development was a game-changer for us. Prayatna and the team not only understood our brand vision but elevated it to new heights. Their creativity, attention to detail, and commitment to excellence set them apart. Highly recommended.",
+        author: "Hussain Shekh",
+        position: "CEO, Brand Spark Visuals",
+        image:
+          "https://luminr.co/_next/static/media/hussian_shekh.f3c80ae1.webp",
+      },
+    ],
+  },
+];

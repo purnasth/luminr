@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Benefits from "./components/Benefits";
+import Portfolio from "./components/Portfolio";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <Services />
       {/* <Test /> */}
       <Benefits />
+      <Portfolio />
+      <Testimonials />
     </>
   );
 };
