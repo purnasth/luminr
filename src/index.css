@@ -13,8 +13,7 @@
     @apply text-luminr-white;
   }
 
-  section 
-  {
+  section {
     @apply py-28 px-4;
   }
 
@@ -43,20 +42,19 @@
     @apply font-rambla;
     /* @apply font-inria; */
   }
+
   p {
     @apply text-xl;
   }
 
   .text-gradient {
-    background: radial-gradient(
-      64.18% 64.18% at 71.16% 35.69%,
-      #e49676 0.89%,
-      #e49676 17.23%,
-      #e49676 42.04%,
-      #db6332 55.12%,
-      #db6332 71.54%,
-      #e24f12 100%
-    );
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
+        #e49676 0.89%,
+        #e49676 17.23%,
+        #e49676 42.04%,
+        #db6332 55.12%,
+        #db6332 71.54%,
+        #e24f12 100%);
     /* background: radial-gradient(
       64.18% 64.18% at 71.16% 35.69%,
       #def9fa 0.89%,
@@ -82,15 +80,13 @@
       #5ce1e6 51.94%,
       #db6332 90.29%
     ); */
-    background: radial-gradient(
-      64.18% 64.18% at 71.16% 35.69%,
-      #ecac93 0.89%,
-      #e49676 17.23%,
-      #e49676 42.04%,
-      #db6332 55.12%,
-      #db6332 71.54%,
-      #e24f12 100%
-    );
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
+        #ecac93 0.89%,
+        #e49676 17.23%,
+        #e49676 42.04%,
+        #db6332 55.12%,
+        #db6332 71.54%,
+        #e24f12 100%);
     /* filter: blur(10px); */
   }
 
@@ -100,12 +96,90 @@
   }
 
   .white__gradient {
-    @apply bg-[rgba(242,243,217,0.5)];
+    background: rgba(242, 243, 217, 0.5);
     filter: blur(750px);
   }
 
   .dark__gradient {
     background: linear-gradient(180deg, #ecac93 0%, #070a0f 100%);
     filter: blur(123px);
+  }
+
+  .portfolio .slick-dots li {
+    background-color: #F2F3D9;
+    border-radius: 100%;
+    transform: scale(0.5);
+    transition: all 0.75s ease-in-out;
+  }
+
+  .portfolio .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    opacity: 0 !important;
+  }
+
+  .portfolio .slick-dots li.slick-active {
+    height: 50px;
+    border-radius: 4px;
+    position: relative;
+    transform: translateY(-20px) scale(0.45);
+  }
+
+  .portfolio .slick-dots li.slick-active::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-60%);
+    width: 20px;
+    height: 20px;
+    background-color: #DB6332;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .portfolio .slick-dots li.slick-active::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #F2F3D9;
+    z-index: 1;
+  }
+
+  /* another design */
+  /* .portfolio .slick-dots li.slick-active {
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
+        #ecac93 0.89%,
+        #e49676 17.23%,
+        #e49676 42.04%,
+        #db6332 55.12%,
+        #db6332 71.54%,
+        #e24f12 100%);
+    transform: scale(1);
+  } */
+
+
+
+
+  /* for slideshow customization */
+  .portfolio .slick-slide,
+  .portfolio .slick-slide.slick-active.slick-current {
+    opacity: 0.25;
+    transition: all 0.75s ease-in-out;
+    transform: scale(0.9);
+  }
+
+  .portfolio .slick-slide.slick-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.75s ease-in-out;
   }
 }

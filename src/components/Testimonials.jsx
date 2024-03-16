@@ -8,7 +8,6 @@ import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
-import fullLogo from "../assets/fullLogo.svg";
 
 const Testimonials = () => {
   const sliderRef = useRef(null);

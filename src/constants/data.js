@@ -108,3 +108,47 @@ export const testimonialContents = [
     ],
   },
 ];
+
+export const portfolioContents = [
+  {
+    id: "portfolioTitle",
+    title: "Portfolio",
+    portfolio: [
+      {
+        id: "thehimalayanco",
+        title: "The Himalayan Co",
+        logo: "https://www.thehimalayan.co/wp-content/uploads/2023/07/The-Himalayan-Co-Logo.png.webp",
+        subtitle: "",
+        description: "",
+        image: "https://luminr.co/_next/static/media/chewybliss.9d49ca34.webp",
+        url: "https://www.thehimalayan.co/",
+      },
+
+      {
+        id: "brandspark",
+        title: "Brand Spark",
+        subtitle: "",
+        description: "",
+        image: "https://luminr.co/_next/static/media/brandpark.a3c20a61.webp",
+        url: "",
+      },
+      {
+        id: "tigg",
+        title: "Tigg",
+        logo: "https://assets-global.website-files.com/61d2839d3c449e856767b6de/61d80296849b802084b107a2_TiggLogo.svg",
+        subtitle: "",
+        description: "",
+        image: "https://luminr.co/_next/static/media/tiggapp.41264040.webp",
+        url: "https://www.tiggapp.com/",
+      },
+      {
+        id: "vistamails",
+        title: "Vista Mails",
+        subtitle: "",
+        description: "",
+        image: "https://luminr.co/_next/static/media/vista-mails.65875c0d.webp",
+        url: "",
+      },
+    ],
+  },
+];
