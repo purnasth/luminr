@@ -28,9 +28,9 @@ const Benefits = () => {
         <div className="mx-auto hidden grid-cols-1 items-start md:grid md:grid-cols-2 md:gap-10 lg:grid-cols-3">
           {benefitsData.map((benefit, index) => (
             <div key={index} className="w-full grid md:gap-10">
-              <div className="group relative rounded-xl border border-white/10 bg-gray-900 px-8 pt-0 pb-4 shadow-2xl shadow-sky-500 md:shadow-none">
-                <div
-                  className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"
+              {/* <div className="group relative rounded-xl border border-luminr-white/10 bg-luminr-orange/5 px-8 pt-0 pb-4 shadow-2xl shadow-sky-500 md:shadow-none"> */}
+              {/* <div
+                  className="pointer-events-none absolute -inset-px rounded-xl opacity-1 transition duration-300 group-hover:opacity-100"
                   style={{
                     background: `radial-gradient(650px at ${
                       index === 0
@@ -40,8 +40,42 @@ const Benefits = () => {
                         : "313.275px 128.925px"
                     }, rgba(14, 165, 233, 0.15), transparent 80%)`,
                   }}
+                /> */}
+
+              <div
+                className="group relative rounded-xl border border-luminr-white/10 bg-luminr-orange/5 px-8 pt-0 pb-4 shadow-2xl shadow-sky-500 md:shadow-none"
+                style={{
+                  background: `radial-gradient(circle at ${
+                    index === 0
+                      ? "324.6px 163.925px"
+                      : index === 1
+                      ? "346.938px 177.925px"
+                      : "313.275px 128.925px"
+                  }, rgba(14, 165, 233, 0.15), transparent 80%)`,
+                }}
+              >
+                <div
+                  className={`pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 z-0 ${
+                    index === 0
+                      ? "group-hover:opacity-10 bg-radial-gradient-orange"
+                      : index === 1
+                      ? "group-hover:opacity-10 bg-radial-gradient-blue"
+                      : index === 2
+                      ? "group-hover:opacity-10 bg-radial-gradient-red"
+                      : "group-hover:opacity-10 bg-radial-gradient-yellow"
+                  }`}
+                  // style={{
+                  //   background: `radial-gradient(circle at ${
+                  //     index === 0
+                  //       ? "324.6px 163.925px"
+                  //       : index === 1
+                  //       ? "346.938px 177.925px"
+                  //       : "313.275px 128.925px"
+                  //   }, rgba(233, 94, 14, 0.2), transparent 80%)`,
+                  // }}
                 />
-                <div className="w-full h-[35rem]">
+
+                <div className="w-full h-[35rem] z-20">
                   <img src={benefit.image} alt={benefit.title} />
                   <p className="text-base leading-7 text-luminr-orange">
                     {benefit.title}

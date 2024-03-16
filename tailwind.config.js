@@ -7,6 +7,16 @@ export default {
       padding: "2rem",
     },
     extend: {
+      backgroundImage: {
+        "radial-gradient-orange":
+          "radial-gradient(circle, rgba(255,217,184,1) 0%, rgba(255,159,82,1) 100%)",
+        "radial-gradient-blue":
+          "radial-gradient(circle, rgba(184,215,255,1) 0%, rgba(82,130,255,1) 100%)",
+        "radial-gradient-red":
+          "radial-gradient(circle, rgba(255,184,184,1) 0%, rgba(255,82,82,1) 100%)",
+        "radial-gradient-yellow":
+          "radial-gradient(circle, rgba(255,255,184,1) 0%, rgba(255,255,82,1) 100%)",
+      },
       fontFamily: {
         playfair: ['"Playfair Display"', "serif"],
         inria: ['"Inria Serif"', "serif"],
