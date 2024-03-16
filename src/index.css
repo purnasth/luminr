@@ -13,6 +13,7 @@
     @apply text-luminr-white;
   }
 
+  footer,
   section {
     @apply py-28 px-4;
   }

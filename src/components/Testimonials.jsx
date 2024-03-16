@@ -33,7 +33,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="bg-luminr-blue px-0 relative overflow-hidden"
+      className="bg-luminr-blue relative pb-40"
     >
       {/* <div
         className="rocket absolute inset-0 opacity-10"
@@ -48,7 +48,7 @@ const Testimonials = () => {
         }}
       /> */}
       <div className="container mx-auto">
-        <div className="flexCenter p-4">
+        <div className="flexCenter">
           <div className="flex items-center justify-between w-full">
             <div className="mb-20">
               <h2 className="text-2xl mb-4 font-rambla leading-7 tracking-wide text-gradient font-semibold">
@@ -82,7 +82,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 p-4">
+        <div className="mt-10">
           <Slider
             {...settings}
             ref={sliderRef}

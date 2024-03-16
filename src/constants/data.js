@@ -152,3 +152,32 @@ export const portfolioContents = [
     ],
   },
 ];
+
+const footerContents = {
+  companyName: "luminr.co",
+  companyDescription:
+    "We Build, Optimize, and Elevate Your Digital Presence, So You Can Focus on Growing Your Business.",
+  address: "Kaldhara, Kathmandu",
+  email: "hello@luminr.co",
+  socialMedia: [
+    { icon: "GrInstagram", link: "https://www.instagram.com/luminr.co/" },
+    { icon: "FaFacebookF", link: "https://www.facebook.com/luminr.co" },
+    { icon: "FaLinkedinIn", link: "https://www.linkedin.com/company/luminr-co/" },
+  ],
+  navigationLinks: [
+    { label: "Web Development", link: "#" },
+    { label: "SEO for Shopify stores", link: "#" },
+    { label: "Benefits", link: "#" },
+    { label: "Portfolio", link: "#" },
+    { label: "Testimonials", link: "#" },
+    { label: "Packages", link: "#" },
+    { label: "FAQ", link: "#" },
+    { label: "Appointment", link: "#" },
+  ],
+  createdBy: {
+    name: "Purna Shrestha",
+    website: "https://www.purnashrestha.com.np/",
+  },
+};
+
+export default footerContents;
