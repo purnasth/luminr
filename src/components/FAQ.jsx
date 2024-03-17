@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { faqs } from "../constants/data";
 import ScrollReveal from "./ScrollReveal";
 import { FaPlus } from "react-icons/fa6";
+import Bg from "./Bg";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0); // Initialize with 0
@@ -12,8 +13,9 @@ const FAQ = () => {
 
   return (
     <>
-      <section id="faq" className="bg-luminr-blue relative">
-        <div className="container max-w-7xl">
+      <section id="faq" className="relative">
+        <Bg />
+        <div className="container max-w-7xl z-10">
           <div className="max-w-5xl mx-auto text-center pb-40">
             <h2 className="text-2xl mb-4 font-rambla leading-7 tracking-wide text-gradient font-semibold">
               FAQ
