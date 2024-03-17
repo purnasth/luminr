@@ -4,11 +4,13 @@ import web from "../assets/web.svg";
 import seo from "../assets/seo.svg";
 import ScrollReveal from "./ScrollReveal";
 import { TbWorldSearch } from "react-icons/tb";
+import Bg from "./Bg";
 
 const Services = () => {
   return (
     <>
-      <section id="services" className="h-full transition duration-1000 bg-luminr-blue">
+      <section id="services" className="h-full transition duration-1000 relative">
+        <Bg />
         <div className="container">
           <div className="max-w-5xl mx-auto text-center pb-40">
             <h2 className="text-2xl mb-4 font-rambla leading-7 tracking-wide text-gradient font-semibold">

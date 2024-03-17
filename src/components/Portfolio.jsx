@@ -8,6 +8,7 @@ import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
+import Bg from "./Bg.jsx";
 
 const Portfolio = () => {
   const sliderRef = useRef(null);
@@ -47,7 +48,8 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="bg-luminr-blue px-0">
+    <section id="portfolio" className="relative px-0">
+      <Bg />
       <div className="container mx-auto">
         <div className="flexCenter p-4">
           <div className="flex items-center justify-center w-full">

@@ -1,10 +1,12 @@
 import React from "react";
 import ScrollReveal from "./ScrollReveal";
 import { benefitsData } from "../constants/data";
+import Bg from "./Bg";
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="bg-luminr-blue">
+    <section id="benefits" className="relative">
+      <Bg/>
       <div className="relative container overflow-hidden">
         <div className="pointer-events-none absolute inset-0 z-10 flex h-screen justify-center">
           <div className="hidden h-full w-full grid-cols-3 gap-3.5 lg:grid">
