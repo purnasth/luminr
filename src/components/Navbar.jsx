@@ -35,7 +35,9 @@ const Navbar = () => {
                   className="z-50 text-luminr-white hover:text-white text-lg font-medium flex items-center"
                 >
                   {link.title}
-                  {link.sublinks && <HiOutlineChevronDown className="text-sm ml-1" />}
+                  {link.sublinks && (
+                    <HiOutlineChevronDown className="text-sm ml-1" />
+                  )}
                 </a>
                 {link.sublinks && (
                   <ul
