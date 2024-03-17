@@ -89,7 +89,7 @@
         #db6332 71.54%,
         #e24f12 100%);
     /* filter: blur(10px); */
-    
+
   }
 
   .orange__gradient {
@@ -112,6 +112,14 @@
     border-radius: 100%;
     transform: scale(0.5);
     transition: all 0.75s ease-in-out;
+    opacity: 0.5;
+  }
+
+  .portfolio .slick-dots li:hover {
+    background-color: #DB6332;
+    transform: scale(0.75);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
   }
 
   .portfolio .slick-dots li button {
@@ -124,10 +132,12 @@
   }
 
   .portfolio .slick-dots li.slick-active {
+    background-color: #F2F3D9;
     height: 50px;
     border-radius: 4px;
     position: relative;
     transform: translateY(-20px) scale(0.45);
+    opacity: 1;
   }
 
   .portfolio .slick-dots li.slick-active::before {

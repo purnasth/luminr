@@ -153,7 +153,7 @@ export const portfolioContents = [
   },
 ];
 
-const footerContents = {
+export const footerContents = {
   companyName: "luminr.co",
   companyDescription:
     "We Build, Optimize, and Elevate Your Digital Presence, So You Can Focus on Growing Your Business.",
@@ -162,7 +162,10 @@ const footerContents = {
   socialMedia: [
     { icon: "GrInstagram", link: "https://www.instagram.com/luminr.co/" },
     { icon: "FaFacebookF", link: "https://www.facebook.com/luminr.co" },
-    { icon: "FaLinkedinIn", link: "https://www.linkedin.com/company/luminr-co/" },
+    {
+      icon: "FaLinkedinIn",
+      link: "https://www.linkedin.com/company/luminr-co/",
+    },
   ],
   navigationLinks: [
     { label: "Web Development", link: "#" },
@@ -181,3 +184,28 @@ const footerContents = {
 };
 
 export default footerContents;
+
+export const faqs = [
+  {
+    question: "Can I get access to both services?",
+    answer:
+      "Yes. Since our Website development time is very less, we focus on building foundations for SEO while simultaneously making sure your time is well valued.",
+  },
+  {
+    question: "What is the price?",
+    answer: "All prices are based on the complexity of the projects.",
+  },
+  {
+    question: "How long does it take to start?",
+    answer: "We get started as soon as the contracts are signed.",
+  },
+  {
+    question: "How long does your process take?",
+    answer: "It depends on the complexity of the project.",
+  },
+  {
+    question: "Why choose Luminr over other Agencies?",
+    answer:
+      "1. Obsession with quality doesn't mean breaking the bank.\n2. Enjoy affordable prices without compromising excellence.\n3. We're your dedicated visionaries with a wealth of experience.",
+  },
+];
