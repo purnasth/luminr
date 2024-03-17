@@ -31,10 +31,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section
-      id="testimonials"
-      className="bg-luminr-blue relative pb-40"
-    >
+    <section id="testimonials" className="bg-luminr-blue relative pb-40">
       {/* <div
         className="rocket absolute inset-0 opacity-10"
         style={{

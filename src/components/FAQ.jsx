@@ -12,7 +12,7 @@ const FAQ = () => {
 
   return (
     <>
-      <section className="bg-luminr-blue relative">
+      <section id="faq" className="bg-luminr-blue relative">
         <div className="container max-w-7xl">
           <div className="max-w-5xl mx-auto text-center pb-40">
             <h2 className="text-2xl mb-4 font-rambla leading-7 tracking-wide text-gradient font-semibold">

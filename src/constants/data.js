@@ -1,22 +1,27 @@
 import business from "../assets/business.svg";
 import audience from "../assets/audience.svg";
 import brand from "../assets/brand.svg";
+import tigg from "../assets/tigg.png";
+import himalyanco from "../assets/himalayanCo.png";
+import vistaMails from "../assets/vistamails.png";
+
+export { business, audience, brand };
 
 export const navLinks = [
   {
     id: "benefits",
     title: "Benefits",
-    url: "/benefits",
+    url: "/#benefits",
   },
   {
     id: "work",
     title: "Work",
-    url: "/about",
+    url: "/#portfolio",
   },
   {
     id: "services",
     title: "Services",
-    url: "/services",
+    url: "/#services",
     sublinks: [
       {
         id: "webDevelopment",
@@ -33,17 +38,17 @@ export const navLinks = [
   {
     id: "testimonials",
     title: "Testimonials",
-    url: "/testimonials",
+    url: "/#testimonials",
   },
   {
     id: "packages",
     title: "Packages",
-    url: "/packages",
+    url: "/#packages",
   },
   {
     id: "faq",
     title: "FAQ",
-    url: "/faq",
+    url: "/#faq",
   },
 ];
 
@@ -120,7 +125,7 @@ export const portfolioContents = [
         logo: "https://www.thehimalayan.co/wp-content/uploads/2023/07/The-Himalayan-Co-Logo.png.webp",
         subtitle: "",
         description: "",
-        image: "https://luminr.co/_next/static/media/chewybliss.9d49ca34.webp",
+        image: himalyanco,
         url: "https://www.thehimalayan.co/",
       },
 
@@ -138,7 +143,7 @@ export const portfolioContents = [
         logo: "https://assets-global.website-files.com/61d2839d3c449e856767b6de/61d80296849b802084b107a2_TiggLogo.svg",
         subtitle: "",
         description: "",
-        image: "https://luminr.co/_next/static/media/tiggapp.41264040.webp",
+        image: tigg,
         url: "https://www.tiggapp.com/",
       },
       {
@@ -146,8 +151,8 @@ export const portfolioContents = [
         title: "Vista Mails",
         subtitle: "",
         description: "",
-        image: "https://luminr.co/_next/static/media/vista-mails.65875c0d.webp",
-        url: "",
+        image: vistaMails,
+        url: "https://thevistamails.com/",
       },
     ],
   },
@@ -170,11 +175,11 @@ export const footerContents = {
   navigationLinks: [
     { label: "Web Development", link: "#" },
     { label: "SEO for Shopify stores", link: "#" },
-    { label: "Benefits", link: "#" },
-    { label: "Portfolio", link: "#" },
-    { label: "Testimonials", link: "#" },
+    { label: "Benefits", link: "#benefits" },
+    { label: "Portfolio", link: "#portfolio" },
+    { label: "Testimonials", link: "#testimonials" },
     { label: "Packages", link: "#" },
-    { label: "FAQ", link: "#" },
+    { label: "FAQ", link: "#faq" },
     { label: "Appointment", link: "#" },
   ],
   createdBy: {

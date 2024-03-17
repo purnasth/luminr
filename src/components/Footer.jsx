@@ -450,7 +450,7 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={item.link}
-                      className="flex items-center justify-start gap-4 mb-4 hover:text-luminr-orange transition-all duration-300 ease-in-out"
+                      className="flex items-center justify-start gap-4 mb-4 hover:text-luminr-orange hover:tracking-wider transition-all duration-300 ease-in-out"
                     >
                       {item.icon}
                       {item.text}
@@ -466,7 +466,7 @@ const Footer = () => {
                       <li key={index}>
                         <a
                           href={link.link}
-                          className="text-2xl hover:text-luminr-orange transition-all"
+                          className="text-2xl hover:text-luminr-orange hover:tracking-wider transition-all duration-300 ease-in-out"
                         >
                           {link.label}
                         </a>
@@ -480,7 +480,7 @@ const Footer = () => {
                       <li key={index}>
                         <a
                           href={link.link}
-                          className="text-2xl hover:text-luminr-orange transition-all"
+                          className="text-2xl hover:text-luminr-orange hover:tracking-wider transition-all duration-300 ease-in-out"
                         >
                           {link.label}
                         </a>

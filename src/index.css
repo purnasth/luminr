@@ -13,6 +13,10 @@
     @apply text-luminr-white;
   }
 
+  * {
+    scroll-behavior: smooth
+  }
+
   footer,
   section {
     @apply py-28 px-4;
@@ -193,5 +197,29 @@
     opacity: 1;
     transform: scale(1);
     transition: all 0.75s ease-in-out;
+  }
+
+
+  .portfolio-image {
+    scroll-behavior: unset;
+  }
+
+  .portfolio-image::-webkit-scrollbar {
+    width: 0.35em;
+  }
+
+  .portfolio-image::-webkit-scrollbar-track {
+    background-color: #f2f3d956;
+    border-radius: 100vw;
+  }
+
+  .portfolio-image::-webkit-scrollbar-thumb {
+    /* background-color: #F2F3D9; */
+    background-color: #DB6332;
+    border-radius: 100vw;
+  }
+
+  .portfolio-image::-webkit-scrollbar-thumb:hover {
+    background-color: #db6232c3;
   }
 }

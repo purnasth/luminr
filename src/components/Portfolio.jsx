@@ -38,8 +38,16 @@ const Portfolio = () => {
     ],
   };
 
+  const handleWheel = (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+    const container = event.currentTarget;
+    const delta = Math.max(-1, Math.min(1, event.deltaY));
+    container.scrollLeft -= delta * 40;
+  };
+
   return (
-    <section id="rooms" className="bg-luminr-blue px-0">
+    <section id="portfolio" className="bg-luminr-blue px-0">
       <div className="container mx-auto">
         <div className="flexCenter p-4">
           <div className="flex items-center justify-center w-full">
@@ -54,20 +62,6 @@ const Portfolio = () => {
                 highlightColor="gradient"
               />
             </div>
-            {/* <div className="button flex items-center justify-center gap-4">
-              <button
-                onClick={handlePrevSlide}
-                className="group bg-gradient py-1 px-5 rounded-full text-luminr-blue font-bold shadow-md shadow-luminr-orange hover:shadow-lg hover:shadow-luminr-white/10 transition-all duration-300 ease-in-out"
-              >
-                <HiOutlineArrowNarrowLeft className="group-hover:scale-x-[1.25] group-hover:-translate-x-2 transition-all duration-300 ease-in-out" />
-              </button>
-              <button
-                onClick={handleNextSlide}
-                className="group bg-gradient py-1 px-5 rounded-full text-luminr-blue font-bold shadow-md shadow-luminr-orange hover:shadow-lg hover:shadow-luminr-white/10 transition-all duration-300 ease-in-out"
-              >
-                <HiOutlineArrowNarrowRight className="group-hover:scale-x-[1.25] group-hover:translate-x-2 transition-all duration-300 ease-in-out" />
-              </button>
-            </div> */}
           </div>
         </div>
       </div>
@@ -78,11 +72,18 @@ const Portfolio = () => {
               key={works.id}
               className="p-6 border-0 outline-0 focus:border-0 rounded-xl"
             >
-              <img
-                src={works.image}
-                alt={works.title}
-                className="w-full h-[70vh] rounded-xl object-cover border-0 outline-0 focus:border-0 focus:outline-none"
-              />
+              <div
+                className="portfolio-image overflow-x-auto max-h-[70vh] relative cursor-all-scroll border-0 outline-0 focus:border-0 focus:outline-none"
+                style={{ maxWidth: "100%", maxHeight: "70vh" }}
+                onWheel={handleWheel}
+              >
+                <img
+                  src={works.image}
+                  alt={works.title}
+                  className="w-full rounded-xl object-cover border-0 outline-0 focus:border-0 focus:outline-none"
+                  draggable="true"
+                />
+              </div>
               <div className="flex items-center justify-between gap-4 py-4 p-2">
                 <div>
                   <h3 className="text-2xl">{works.title}</h3>
@@ -96,7 +97,6 @@ const Portfolio = () => {
                   View website
                   <HiOutlineArrowNarrowRight className="text-xl text-luminr-orange group-hover:scale-x-[1.25] group-hover:translate-x-2 transition-all duration-300 ease-in-out" />
                 </a>
-                {/* <p className="text-base">{works.description}</p> */}
               </div>
             </div>
           ))}

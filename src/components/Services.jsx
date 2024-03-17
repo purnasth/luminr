@@ -8,7 +8,7 @@ import { TbWorldSearch } from "react-icons/tb";
 const Services = () => {
   return (
     <>
-      <section className="h-full transition duration-1000 bg-luminr-blue">
+      <section id="services" className="h-full transition duration-1000 bg-luminr-blue">
         <div className="container">
           <div className="max-w-5xl mx-auto text-center pb-40">
             <h2 className="text-2xl mb-4 font-rambla leading-7 tracking-wide text-gradient font-semibold">
