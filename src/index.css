@@ -13,9 +13,9 @@
     @apply text-luminr-white;
   }
 
-  * {
+  /* * {
     scroll-behavior: smooth
-  }
+  } */
 
   footer,
   section {

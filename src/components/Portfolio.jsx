@@ -73,7 +73,7 @@ const Portfolio = () => {
               className="p-6 border-0 outline-0 focus:border-0 rounded-xl"
             >
               <div
-                className="portfolio-image overflow-x-auto max-h-[70vh] relative cursor-all-scroll border-0 outline-0 focus:border-0 focus:outline-none"
+                className="portfolio-image overflow-x-auto max-h-[70vh] rounded-xl relative cursor-all-scroll border-0 outline-0 focus:border-0 focus:outline-none"
                 style={{ maxWidth: "100%", maxHeight: "70vh" }}
                 onWheel={handleWheel}
               >

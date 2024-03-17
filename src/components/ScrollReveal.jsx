@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 import Lenis from "@studio-freight/lenis";
 
@@ -29,6 +29,7 @@ function ScrollReveal({ text1, text2, textColor, highlightColor }) {
       });
     });
 
+    // for smooth animation scroll
     const lenis = new Lenis();
 
     function raf(time) {
