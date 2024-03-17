@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
+import BackToTopButton from "./components/BackToTopButton";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Testimonials />
       <FAQ />
       <Footer />
+      <BackToTopButton />
     </>
   );
 };
