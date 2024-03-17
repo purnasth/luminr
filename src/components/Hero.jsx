@@ -2,11 +2,13 @@ import React from "react";
 import heroSVG from "../assets/hero.svg";
 import { heroContents } from "../constants/data.js";
 import { BsUnlock } from "react-icons/bs";
+import Bg from "./Bg.jsx";
 
 const Hero = () => {
   return (
     <>
-      <section className="flexCenter h-screen bg-luminr-blue">
+      <section className="flexCenter h-screen relative">
+        <Bg />
         <div className="absolute z-[3] -left-2/3 top-0 w-1/2 h-1/2 rounded-full white__gradient" />
         <div className="absolute z-[0] -left-1/2 bottom-0 w-1/2 h-1/2 rounded-full orange__gradient" />
 

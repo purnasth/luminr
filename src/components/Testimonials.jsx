@@ -8,6 +8,7 @@ import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
+import Bg from "./Bg.jsx";
 
 const Testimonials = () => {
   const sliderRef = useRef(null);
@@ -31,7 +32,8 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="bg-luminr-blue relative pb-40">
+    <section id="testimonials" className="relative pb-40">
+      <Bg />
       {/* <div
         className="rocket absolute inset-0 opacity-10"
         style={{
