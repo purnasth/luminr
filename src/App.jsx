@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom"; // Import BrowserRouter as Router
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -11,7 +12,7 @@ import BackToTopButton from "./components/BackToTopButton";
 
 const App = () => {
   return (
-    <>
+    <Router>
       <Navbar />
       <Hero />
       <Services />
@@ -21,7 +22,7 @@ const App = () => {
       <FAQ />
       <Footer />
       <BackToTopButton />
-    </>
+    </Router>
   );
 };
 

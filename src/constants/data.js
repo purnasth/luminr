@@ -14,8 +14,8 @@ export const navLinks = [
     url: "/#benefits",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "portfolio",
+    title: "Portfolio",
     url: "/#portfolio",
   },
   {
