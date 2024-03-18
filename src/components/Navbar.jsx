@@ -167,8 +167,8 @@ const Navbar = () => {
       <div
         className={`${
           showMenu
-            ? "opacity-100 scale-100 -translate-y-0"
-            : "opacity-0 scale-0 -translate-y-8"
+            ? "block opacity-100 scale-100 -translate-y-0"
+            : "hidden opacity-0 scale-0 -translate-y-14"
         } sm:container lg:hidden transition-all duration-300 ease-out transform origin-top w-auto h-full z-40 backdrop-blur-md border bg-luminr-blue/30 border-luminr-white/[0.16] mt-4 pb-8 rounded-t-3xl rounded-b-3xl`}
       >
         <ul className="flex flex-col space-y-4 gap-2 mb-2 p-8">

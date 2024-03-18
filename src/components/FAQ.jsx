@@ -15,8 +15,8 @@ const FAQ = () => {
     <>
       <section id="faq" className="relative">
         <Bg />
-        <div className="container max-w-7xl z-10">
-          <div className="max-w-5xl mx-auto text-center pb-40">
+        <div className="sm:container max-w-7xl z-10">
+          <div className="max-w-5xl mx-auto text-center pb-16 md:pb-40">
             <h2 className="text-2xl mb-4 font-rambla leading-7 tracking-wide text-gradient font-semibold">
               FAQ
             </h2>
@@ -36,7 +36,7 @@ const FAQ = () => {
                 className="group py-4 px-6 rounded shadow cursor-pointer flex justify-between items-center relative overflow-hidden hover:text-luminr-orange transition-all duration-500"
                 onClick={() => toggleFAQ(index)}
               >
-                <h3 className="font-rambla text-2xl font-semibold">
+                <h3 className="font-rambla text-base md:text-2xl font-semibold">
                   {faq.question}
                 </h3>
                 <div className="absolute h-[2px] w-full bg-gradient-to-r from-transparent via-luminr-white/50 to-transparent translate-y-8" />
@@ -52,7 +52,7 @@ const FAQ = () => {
                 }`}
               >
                 <p
-                  className="text-xl text-luminr-white/70 py-4 px-6"
+                  className="text-base md:text-xl text-luminr-white/70 py-4 px-6"
                   dangerouslySetInnerHTML={{
                     __html: faq.answer.replace(/\n/g, "<br />"),
                   }}
