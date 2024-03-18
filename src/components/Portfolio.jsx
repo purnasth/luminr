@@ -28,7 +28,7 @@ const Portfolio = () => {
     autoplay: false,
     infinite: true,
     speed: 750,
-    slidesToShow: 1.662,
+    slidesToShow: 1.665,
     slidesToScroll: 1,
     responsive: [
       {
@@ -101,8 +101,10 @@ const Portfolio = () => {
                   draggable="true"
                 />
               </div>
-              <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-4 mt-4 py-4 p-2 mb-6 md:pb-6">
-                <h3 className="text-2xl hidden md:block">{works.title}</h3>
+              <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-4 mt-4 py-4 p-2 mb-6 md:pb-6">
+                <h3 className="w-36 text-lg hidden md:block font-rambla">
+                  {works.title}
+                </h3>
 
                 <ScrollDownIcon />
 
@@ -110,7 +112,7 @@ const Portfolio = () => {
                   href={works.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 group text-gradient py-1 px-5 rounded-full font-bold transition-all duration-300 ease-in-out"
+                  className="w-36 flex items-center gap-2 group text-gradient py-1 px-4 pr-0 rounded-full font-bold transition-all duration-300 ease-in-out"
                 >
                   View website
                   <HiOutlineArrowNarrowRight className="text-xl text-luminr-orange group-hover:scale-x-[1.25] group-hover:translate-x-2 transition-all duration-300 ease-in-out" />

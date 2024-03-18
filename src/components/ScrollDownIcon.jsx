@@ -7,7 +7,7 @@ const ScrollDownIcon = () => {
       <div className="animate-bounce">
         <LuMouse className="text-luminr-white h-8 w-8" />
       </div>
-      <p className="text-luminr-white mt-2">Scroll down</p>
+      <p className="text-luminr-white mt-2 text-base">Scroll down</p>
     </div>
   );
 };
