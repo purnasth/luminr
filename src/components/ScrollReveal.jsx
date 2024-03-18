@@ -42,7 +42,7 @@ function ScrollReveal({ text1, text2, textColor, highlightColor }) {
   return (
     <>
       <h4
-        className={`font-kalnia text-5xl leading-normal font-medium reveal-type`}
+        className={`font-kalnia clamp-h2 leading-normal font-medium reveal-type`}
       >
         <span className={`font-kalnia text-${textColor}`}>{text1}</span>{" "}
         <span className={`font-kalnia text-${highlightColor}`}>{text2}</span>

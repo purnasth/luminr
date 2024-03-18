@@ -7,12 +7,12 @@ import Bg from "./Bg.jsx";
 const Hero = () => {
   return (
     <>
-      <section className="flexCenter h-screen relative">
+      <section className="flexCenter min-h-screen h-auto relative">
         <Bg />
         <div className="absolute z-[3] -left-2/3 top-0 w-1/2 h-1/2 rounded-full white__gradient" />
         <div className="absolute z-[0] -left-1/2 bottom-0 w-1/2 h-1/2 rounded-full orange__gradient" />
 
-        <div className="sm:container mt-28">
+        <div className="sm:container -mt-8 lg:mt-10">
           <div className="flexCenter gap-2 lg:gap-12 flex-col-reverse lg:flex-row">
             <div className="flex-1">
               {heroContents.map((content, index) => {
@@ -28,7 +28,9 @@ const Hero = () => {
                       </span>
                       {words.slice(4).join(" ")}{" "}
                     </h2>
-                    <p className="w-4/5 my-8">{content.subtitle}</p>
+                    <p className="text-sm md:text-base lg:text-xl w-full md:w-4/5 pt-2 pb-6 md:my-8">
+                      {content.subtitle}
+                    </p>
                   </div>
                 );
               })}
@@ -36,14 +38,14 @@ const Hero = () => {
                 <span className="absolute inset-0 overflow-hidden">
                   <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(219,99,50,1)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
                 </span>
-                <div className="relative z-10 rounded-full bg-gradient-to-b from-zinc-800 to-zinc-900 px-6 py-4 ring-1 ring-white/10 flex items-center space-x-2">
-                  <span>Appointment</span>
+                <div className="relative z-10 rounded-full bg-gradient-to-b from-zinc-800 to-zinc-900 px-6 py-3 ring-1 ring-white/10 flex items-center space-x-2">
+                  <span className="text-base md:text-xl">Appointment</span>
                 </div>
                 <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-[rgb(219,99,50)] to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
               </button>
             </div>
 
-            <div className="flex-1 relative mt-5 md:mt-0">
+            <div className="flex-1 relative mt-16 md:mt-0">
               <img
                 src={heroSVG}
                 alt="Hero"

@@ -19,7 +19,7 @@
 
   footer,
   section {
-    @apply py-28 px-4;
+    @apply py-16 md:py-28 px-4;
   }
 
   .flexCenter {

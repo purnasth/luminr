@@ -9,10 +9,10 @@ import Bg from "./Bg";
 const Services = () => {
   return (
     <>
-      <section id="services" className="h-full transition duration-1000 relative">
+      <section id="services" className="transition duration-1000 relative">
         <Bg />
-        <div className="container">
-          <div className="max-w-5xl mx-auto text-center pb-40">
+        <div className="sm:container">
+          <div className="max-w-5xl mx-auto text-center pb-16 md:pb-40">
             <h2 className="text-2xl mb-4 font-rambla leading-7 tracking-wide text-gradient font-semibold">
               Services
             </h2>
@@ -23,7 +23,7 @@ const Services = () => {
               highlightColor="gradient"
             />
           </div>
-          <div className="relative flex h-full w-full px-8 lg:space-x-10">
+          <div className="relative flex h-full w-full lg:space-x-10">
             <div className="h-full w-0 lg:w-[4%]" />
             <div className="w-full lg:w-[96%]">
               <div className="absolute left-0 hidden h-full w-[4%] justify-center lg:flex ">
@@ -36,10 +36,10 @@ const Services = () => {
               </div>
               <div className="">
                 <p className="pt-2">UI/UX</p>
-                <h2 className="py-10 text-2xl font-bold md:text-4xl lg:text-6xl">
+                <h2 className="py-4 md:py-10 text-2xl font-bold md:text-4xl lg:text-6xl">
                   Web Design and Development
                 </h2>
-                <div className="relative grid grid-cols-1 gap-20 md:grid-cols-3">
+                <div className="relative grid grid-cols-1 gap-0 md:gap-12 md:grid-cols-3">
                   <div>
                     <p className="text-base font-normal lg:text-xl lg:leading-relaxed">
                       Elevate your brand with captivating landing and product
@@ -59,7 +59,7 @@ const Services = () => {
                       draggable="false"
                       loading="lazy"
                       decoding="async"
-                      className="transition duration-500 blur-0 rounded-2xl object-contain p-10 select-none"
+                      className="transition duration-500 blur-0 rounded-2xl object-contain p-6 md:p-10 select-none"
                       //   className="transition duration-500  scale-100 blur-0 mx-auto rounded-2xl object-contain shadow-2xl"
                       //   style={{ color: "transparent" }}
                       src={web}
@@ -67,12 +67,13 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-40">
+              <div className="py-16 md:py-40">
                 <p className="">SEO</p>
-                <h2 className=" py-10 text-2xl font-bold md:text-4xl lg:text-6xl">
+
+                <h2 className="py-4 mdd:py-10 text-2xl font-bold md:text-4xl lg:text-6xl">
                   SEO for Shopify Stores
                 </h2>
-                <div className="relative grid grid-cols-1 gap-20 md:grid-cols-3">
+                <div className="relative grid grid-cols-1 gap-4 md:gap-20 md:grid-cols-3">
                   <div
                     className="relative md:col-span-2"
                     style={{ opacity: 1, transform: "none" }}
@@ -82,7 +83,7 @@ const Services = () => {
                       draggable="false"
                       loading="lazy"
                       decoding="async"
-                      className="transition duration-500 blur-0 object-contain p-10 scale-90"
+                      className="transition duration-500 blur-0 object-contain p-6 md:p-10 md:scale-90"
                       src={seo}
                     />
                   </div>
