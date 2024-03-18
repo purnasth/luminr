@@ -9,6 +9,7 @@ import {
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
 import Bg from "./Bg";
+import ScrollDownIcon from "./ScrollDownIcon.jsx";
 
 const Portfolio = () => {
   const sliderRef = useRef(null);
@@ -24,10 +25,10 @@ const Portfolio = () => {
   const settings = {
     dots: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     infinite: true,
-    speed: 4000,
-    slidesToShow: 1.67,
+    speed: 750,
+    slidesToShow: 1.662,
     slidesToScroll: 1,
     responsive: [
       {
@@ -89,7 +90,7 @@ const Portfolio = () => {
               className="md:p-6 border-0 outline-0 focus:border-0 rounded-xl"
             >
               <div
-                className="portfolio-image overflow-x-auto max-h-[35vh] lg:max-h-[45vh] xl:max-h-[70vh] rounded-xl relative cursor-all-scroll border-0 outline-0 focus:border-0 focus:outline-none"
+                className="portfolio-image overflow-x-auto max-h-[35vh] lg:max-h-[45vh] xl:max-h-[70vh] rounded-xl relative border-0 outline-0 focus:border-0 focus:outline-none"
                 // style={{ maxWidth: "100%", maxHeight: "70vh" }}
                 onWheel={handleWheel}
               >
@@ -100,10 +101,11 @@ const Portfolio = () => {
                   draggable="true"
                 />
               </div>
-              <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-4 mt-4 py-4 p-2 mb-6 md:pb-2">
-                <div>
-                  <h3 className="text-2xl">{works.title}</h3>
-                </div>
+              <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-4 mt-4 py-4 p-2 mb-6 md:pb-6">
+                <h3 className="text-2xl hidden md:block">{works.title}</h3>
+
+                <ScrollDownIcon />
+
                 <a
                   href={works.url}
                   target="_blank"
