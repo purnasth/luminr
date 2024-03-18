@@ -46,9 +46,9 @@ const Testimonials = () => {
           
         }}
       /> */}
-      <div className="container mx-auto">
+      <div className="sm:container mx-auto">
         <div className="flexCenter">
-          <div className="flex items-center justify-between w-full">
+          <div className="flex items-center justify-between flex-col md:flex-row w-full">
             <div className="mb-20">
               <h2 className="text-2xl mb-4 font-rambla leading-7 tracking-wide text-gradient font-semibold">
                 Testimonials
@@ -59,7 +59,7 @@ const Testimonials = () => {
                 textColor="gradient"
                 highlightColor="luminr-white"
               />
-              <p className="text-base">
+              <p className="text-base py-4">
                 Your appreciation fuels our dedication. Thanks for trusting us
                 with your web development and SEO needs.
               </p>
@@ -85,11 +85,11 @@ const Testimonials = () => {
           <Slider
             {...settings}
             ref={sliderRef}
-            className="border border-white/10 px-0 pt-0 pb-4 shadow-xl shadow-luminr-orange/10 hover:shadow-lg hover:shadow-luminr-white/10 bg-luminr-blue/20 backdrop-blur-md transition-all duration-300 ease-in-out"
+            className="border border-white/10 px-0 pt-0 pb-4 shadow-xl shadow-sky-500/[0.05] hover:shadow-lg hover:shadow-luminr-white/10 bg-luminr-blue/20 backdrop-blur-md transition-all duration-300 ease-in-out"
           >
             {testimonialContents[0].testimonials.map((testimonial) => (
               <div key={testimonial.id} className="p-4">
-                <div className="flex items-center justify-between gap-8 p-6 ">
+                <div className="flex items-center justify-between flex-col gap-8 md:p-6 ">
                   <div>
                     <img
                       loading="lazy"
@@ -99,13 +99,13 @@ const Testimonials = () => {
                       alt={testimonial.author}
                     />
                   </div>
-                  <div className="flex justify-center flex-col">
+                  <div className="flex justify-center flex-col text-luminr-white/90">
                     <p className="text-xl">" {testimonial.content} "</p>
-                    <div className="flex items-center justify-between gap-4">
+                    <div className="flex md:items-center justify-between flex-col md:flex-row gap-2 text-luminr-white">
                       <h4 className="text-xl font-medium tracking-wide mt-4 uppercase">
                         - {testimonial.author}
                       </h4>
-                      <p className="text-base mt-2 mr-8">
+                      <p className="text-base md:mt-2 mr-8">
                         - {testimonial.position}
                       </p>
                     </div>
