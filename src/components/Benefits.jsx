@@ -6,8 +6,8 @@ import Bg from "./Bg";
 const Benefits = () => {
   return (
     <section id="benefits" className="relative">
-      <Bg/>
-      <div className="relative container overflow-hidden">
+      <Bg />
+      <div className="relative sm:container overflow-hidden">
         <div className="pointer-events-none absolute inset-0 z-10 flex h-screen justify-center">
           <div className="hidden h-full w-full grid-cols-3 gap-3.5 lg:grid">
             <div className="border-x border-black/5" />
@@ -27,9 +27,9 @@ const Benefits = () => {
           />
         </div>
 
-        <div className="mx-auto hidden grid-cols-1 items-start md:grid md:grid-cols-2 md:gap-10 lg:grid-cols-3">
+        <div className="mx-auto grid-cols-1 items-start md:grid md:grid-cols-2 gap-10 lg:grid-cols-3">
           {benefitsData.map((benefit, index) => (
-            <div key={index} className="w-full grid md:gap-10">
+            <div key={index} className="w-full grid gap-10 rounded-xl">
               {/* <div className="group relative rounded-xl border border-luminr-white/10 bg-luminr-orange/5 px-8 pt-0 pb-4 shadow-2xl shadow-sky-500 md:shadow-none"> */}
               {/* <div
                   className="pointer-events-none absolute -inset-px rounded-xl opacity-1 transition duration-300 group-hover:opacity-100"
@@ -45,7 +45,7 @@ const Benefits = () => {
                 /> */}
 
               <div
-                className="group relative rounded-xl border border-luminr-white/10 bg-luminr-orange/5 px-8 pt-0 pb-4 shadow-2xl shadow-sky-500 md:shadow-none"
+                className="group relative rounded-xl border border-luminr-white/10 bg-luminr-orange/5 px-8 pt-0 md:pb-4 sm:shadow-none mb-16 md:mb-0"
                 style={{
                   background: `radial-gradient(circle at ${
                     index === 0
@@ -77,7 +77,7 @@ const Benefits = () => {
                   // }}
                 />
 
-                <div className="w-full h-[35rem] z-20">
+                <div className="w-full h-full pb-8 md:pb-0 md:h-[35rem] z-20">
                   <img src={benefit.image} alt={benefit.title} />
                   <p className="text-base leading-7 text-luminr-orange">
                     {benefit.title}
