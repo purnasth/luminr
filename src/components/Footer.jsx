@@ -37,10 +37,10 @@ const Footer = () => {
               </radialGradient>
             </defs>
           </svg> */}
-          <div className="bg-luminr-blue/20 border border-luminr-white/30 backdrop-blur-md rounded-3xl flex flex-col text-luminr-blue gap-20 justify-between px-10 py-16 z-10">
-            <div className="flex flex-row gap-8 mx-auto">
+          <div className="bg-luminr-blue/20 border border-luminr-white/30 backdrop-blur-md rounded-3xl flex flex-col text-luminr-blue gap-4 md:gap-20 justify-between p-2 md:px-10 md:py-16 z-10 ">
+            <div className="flex flex-row gap-2 md:gap-8 mx-auto">
               <svg
-                className="lg:h-48 w-64 lg:w-auto"
+                className="w-full lg:h-48 lg:w-auto translate-x-4 md:translate-x-0"
                 viewBox="0 0 499 189"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ const Footer = () => {
                 ></path>
               </svg>
               <svg
-                className="lg:w-56 hidden lg:inline-block"
+                className="w-full lg:w-56 lg:inline-block scale-[0.6] md:scale-100"
                 viewBox="0 0 213 181"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -431,19 +431,19 @@ const Footer = () => {
                 </g>
               </svg>
             </div>
-            <div className="flex lg:flex-row flex-col gap-10 lg:gap-0 lg:justify-between">
-              <ul className="text-luminr-white transition-all text-2xl font-medium tracking-wide">
+            <div className="flex items-center lg:flex-row flex-col gap-0 lg:gap-0 lg:justify-between">
+              <ul className="text-luminr-white transition-all text-lg md:text-2xl font-medium tracking-wide">
                 {[
                   {
                     icon: (
-                      <IoLocationOutline className="text-xl bg-gradient w-10 h-10 p-2 rounded-full text-luminr-white" />
+                      <IoLocationOutline className="text-xl bg-gradient size-6 md:size-10 p-1 md:p-2 rounded-full text-luminr-white" />
                     ),
                     text: footerContents.address,
                     link: "https://maps.app.goo.gl/tm1B5cHUaCifb6am8",
                   },
                   {
                     icon: (
-                      <IoMailOpenOutline className="text-xl bg-gradient w-10 h-10 p-2 rounded-full text-luminr-white" />
+                      <IoMailOpenOutline className="text-xl bg-gradient size-6 md:size-10 p-1 md:p-2 rounded-full text-luminr-white" />
                     ),
                     text: footerContents.email,
                     link: `mailto:${footerContents.email}`,
@@ -460,7 +460,7 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-              <div className="flex lg:flex-row flex-col lg:gap-16 gap-4 text-luminr-white">
+              <div className="hidden md:flex items-center text-center md:text-left lg:flex-row flex-col lg:gap-16 gap-4 text-luminr-white">
                 <ul className="list-none flex flex-col gap-4">
                   {footerContents.navigationLinks
                     .slice(0, footerContents.navigationLinks.length / 2)
@@ -468,7 +468,7 @@ const Footer = () => {
                       <li key={index}>
                         <a
                           href={link.link}
-                          className="text-2xl hover:text-luminr-orange hover:tracking-wider transition-all duration-300 ease-in-out"
+                          className="text-base md:text-2xl hover:text-luminr-orange hover:tracking-wider transition-all duration-300 ease-in-out"
                         >
                           {link.label}
                         </a>
@@ -482,7 +482,7 @@ const Footer = () => {
                       <li key={index}>
                         <a
                           href={link.link}
-                          className="text-2xl hover:text-luminr-orange hover:tracking-wider transition-all duration-300 ease-in-out"
+                          className="text-base md:text-2xl hover:text-luminr-orange hover:tracking-wider transition-all duration-300 ease-in-out"
                         >
                           {link.label}
                         </a>
@@ -491,14 +491,14 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="flex flex-col gap-3 justify-end lg:items-end items-start">
-                <ul className="flex space-x-8 mt-4">
+              <div className="flex flex-col gap-3 justify-start lg:items-end items-start pb-4">
+                <ul className="flex space-x-8 md:mt-4">
                   {footerContents.socialMedia.map((social, index) => (
                     <li key={index}>
                       <a
                         href={social.link}
                         rel="noopener noreferrer"
-                        className="w-10 h-10 mt-4 text-luminr-white flex space-x-2 items-center justify-center bg-gradient rounded-full text-xl hover:bg-none hover:text-luminr-orange transition-all duration-100 ease-in"
+                        className="size-8 md:size-10 mt-4 text-luminr-white flex space-x-2 items-center justify-center bg-gradient rounded-full text-xl hover:bg-none hover:text-luminr-orange transition-all duration-100 ease-in"
                       >
                         {social.icon === "GrInstagram" && <GrInstagram />}
                         {social.icon === "FaFacebookF" && <FaFacebookF />}
@@ -512,17 +512,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="container mt-4 -translate-y-20">
+        <div className="sm:container -translate-y-20">
           <div className="h-px w-full bg-gradient-to-r from-transparent via-luminr-white/20 to-transparent" />
 
-          <div className="flex items-center justify-between gap-4 translate-y-9 text-luminr-white">
-            <p className="text-luminr-white">
-              &copy; 2024{" "}
-              <span className="text-xl">{footerContents.companyName}</span>{" "}
-              {"| "}All rights reserved {" |"}
+          <div className="flex items-center justify-center flex-col md:flex-row md:justify-between md:gap-4 translate-y-6 text-luminr-white">
+            <p className="text-base md:text-xl text-luminr-white">
+              &copy; 2024 <span>{footerContents.companyName}</span> {"| "}All
+              rights reserved {" |"}
             </p>
-            <p className="text-center flex items-center flex-wrap justify-center text-luminr-white">
-              Made with{/* */}{" "}
+            <p className="text-base md:text-xl text-center flex items-center flex-wrap justify-center text-luminr-white">
+              Made with{" "}
               <svg
                 width={13}
                 height={11}
