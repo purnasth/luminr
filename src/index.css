@@ -116,6 +116,10 @@
     filter: blur(123px);
   }
 
+  .portfolio .slick-dots {
+    @apply scale-75 md:scale-100;
+  }
+
   .portfolio .slick-dots li {
     background-color: #F2F3D9;
     border-radius: 100%;
@@ -139,6 +143,7 @@
     color: transparent;
     opacity: 0 !important;
   }
+
 
   .portfolio .slick-dots li.slick-active {
     background-color: #F2F3D9;
@@ -193,20 +198,13 @@
   /* for slideshow customization */
   .portfolio .slick-slide,
   .portfolio .slick-slide.slick-active.slick-current {
-    opacity: 0.25;
+    @apply md:opacity-25 scale-90;
     transition: all 0.75s ease-in-out;
-    transform: scale(0.9);
   }
 
   .portfolio .slick-slide.slick-active {
-    opacity: 1;
-    transform: scale(1);
+    @apply opacity-100 scale-100;
     transition: all 0.75s ease-in-out;
-  }
-
-
-  .portfolio-image {
-    scroll-behavior: unset;
   }
 
   .portfolio-image::-webkit-scrollbar {

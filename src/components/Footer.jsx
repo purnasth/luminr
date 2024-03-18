@@ -431,7 +431,7 @@ const Footer = () => {
                 </g>
               </svg>
             </div>
-            <div className="flex items-center lg:flex-row flex-col gap-0 lg:gap-0 lg:justify-between">
+            <div className="flex items-center lg:flex-row flex-col gap-0 md:gap-8 lg:gap-0 lg:justify-between">
               <ul className="text-luminr-white transition-all text-lg md:text-2xl font-medium tracking-wide">
                 {[
                   {
@@ -460,7 +460,7 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-              <div className="hidden md:flex items-center text-center md:text-left lg:flex-row flex-col lg:gap-16 gap-4 text-luminr-white">
+              <div className="hidden md:flex items-center text-center md:text-left flex-col md:flex-row md:gap-16 gap-4 text-luminr-white">
                 <ul className="list-none flex flex-col gap-4">
                   {footerContents.navigationLinks
                     .slice(0, footerContents.navigationLinks.length / 2)

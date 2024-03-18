@@ -63,7 +63,8 @@ const Navbar = () => {
     <nav className="fixed top-4 w-full z-50 px-4">
       <div className="sm:container">
         <div className="w-full flex items-center justify-between backdrop-blur-md border border-luminr-white/[0.16] px-4 py-2 rounded-full ">
-          <NavLink to="/">
+          <a href="/">
+            {/* <NavLink to="/" onClick={() => window.location.reload()}> */}
             <img
               src={luminr}
               alt="Luminr.co"
@@ -74,7 +75,8 @@ const Navbar = () => {
               alt="Luminr.co"
               className="w-10 h-8 object-contain sm:hidden block"
             />
-          </NavLink>
+            {/* </NavLink> */}
+          </a>
           <div className="hidden lg:flex space-x-6">
             {navLinks.map((link, index) => (
               <div

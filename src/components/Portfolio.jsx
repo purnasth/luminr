@@ -8,7 +8,7 @@ import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
-import Bg from "./Bg.jsx";
+import Bg from "./Bg";
 
 const Portfolio = () => {
   const sliderRef = useRef(null);
@@ -26,7 +26,7 @@ const Portfolio = () => {
     arrows: false,
     autoplay: true,
     infinite: true,
-    speed: 500,
+    speed: 4000,
     slidesToShow: 1.67,
     slidesToScroll: 1,
     responsive: [
@@ -41,7 +41,7 @@ const Portfolio = () => {
 
   const handleWheel = (event) => {
     event.stopPropagation();
-    event.preventDefault();
+
     const container = event.currentTarget;
     const delta = Math.max(-1, Math.min(1, event.deltaY));
     container.scrollLeft -= delta * 40;
@@ -50,9 +50,9 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="relative px-0">
       <Bg />
-      <div className="container mx-auto">
+      <div className="sm:container">
         <div className="flexCenter p-4">
-          <div className="flex items-center justify-center w-full">
+          <div className="flex items-center justify-center w-full flex-col">
             <div className="max-w-5xl mx-auto text-center pb-10">
               <h2 className="text-2xl mb-4 font-rambla leading-7 tracking-wide text-gradient font-semibold">
                 {portfolioContents[0].title}
@@ -64,6 +64,20 @@ const Portfolio = () => {
                 highlightColor="gradient"
               />
             </div>
+            <div className="button flex items-center justify-center gap-4">
+              <button
+                onClick={handlePrevSlide}
+                className="group bg-gradient py-1 px-5 rounded-full text-luminr-blue font-bold shadow-md shadow-luminr-orange hover:shadow-lg hover:shadow-luminr-white/10 transition-all duration-300 ease-in-out"
+              >
+                <HiOutlineArrowNarrowLeft className="group-hover:scale-x-[1.25] group-hover:-translate-x-2 transition-all duration-300 ease-in-out" />
+              </button>
+              <button
+                onClick={handleNextSlide}
+                className="group bg-gradient py-1 px-5 rounded-full text-luminr-blue font-bold shadow-md shadow-luminr-orange hover:shadow-lg hover:shadow-luminr-white/10 transition-all duration-300 ease-in-out"
+              >
+                <HiOutlineArrowNarrowRight className="group-hover:scale-x-[1.25] group-hover:translate-x-2 transition-all duration-300 ease-in-out" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -72,11 +86,11 @@ const Portfolio = () => {
           {portfolioContents[0].portfolio.map((works) => (
             <div
               key={works.id}
-              className="p-6 border-0 outline-0 focus:border-0 rounded-xl"
+              className="md:p-6 border-0 outline-0 focus:border-0 rounded-xl"
             >
               <div
-                className="portfolio-image overflow-x-auto max-h-[70vh] rounded-xl relative cursor-all-scroll border-0 outline-0 focus:border-0 focus:outline-none"
-                style={{ maxWidth: "100%", maxHeight: "70vh" }}
+                className="portfolio-image overflow-x-auto max-h-[35vh] lg:max-h-[45vh] xl:max-h-[70vh] rounded-xl relative cursor-all-scroll border-0 outline-0 focus:border-0 focus:outline-none"
+                // style={{ maxWidth: "100%", maxHeight: "70vh" }}
                 onWheel={handleWheel}
               >
                 <img
@@ -86,7 +100,7 @@ const Portfolio = () => {
                   draggable="true"
                 />
               </div>
-              <div className="flex items-center justify-between gap-4 py-4 p-2">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-4 mt-4 py-4 p-2 mb-6 md:pb-2">
                 <div>
                   <h3 className="text-2xl">{works.title}</h3>
                 </div>
