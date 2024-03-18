@@ -29,6 +29,15 @@ export default {
         "luminr-white": "#F2F3D9",
         "gradient-orange": ["rgba(255, 165, 0, 1)", "rgba(255, 165, 0, 0)"],
       },
+
+      container: {
+        screens: {
+          sm: "100%", // Set width to 100% on small screens
+          md: "100%",
+          lg: "1024px",
+          xl: "1280px",
+        },
+      },
     },
   },
   plugins: [],

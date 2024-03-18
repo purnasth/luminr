@@ -52,6 +52,11 @@
     @apply text-xl;
   }
 
+  /* PROPERTIES */
+  .clamp-h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2.65rem);
+  }
+
   .text-gradient {
     background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
         #e49676 0.89%,
@@ -242,5 +247,9 @@
     transform: rotate(-90deg);
     animation: arrow-up 1s infinite alternate;
   } */
+
+
+
+
 
 }

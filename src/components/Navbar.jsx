@@ -60,8 +60,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-4 w-full z-50">
-      <div className="container">
+    <nav className="fixed top-4 w-full z-50 px-4">
+      <div className="sm:container">
         <div className="w-full flex items-center justify-between backdrop-blur-md border border-luminr-white/[0.16] px-4 py-2 rounded-full ">
           <NavLink to="/">
             <img
@@ -169,9 +169,9 @@ const Navbar = () => {
           showMenu
             ? "opacity-100 scale-100 -translate-y-0"
             : "opacity-0 scale-0 -translate-y-8"
-        } lg:hidden transition-all duration-300 ease-out transform origin-top w-auto h-full z-40 backdrop-blur-md border bg-luminr-blue/30 border-luminr-white/[0.16] m-8 p-8 mt-4 rounded-t-3xl rounded-b-3xl`}
+        } sm:container lg:hidden transition-all duration-300 ease-out transform origin-top w-auto h-full z-40 backdrop-blur-md border bg-luminr-blue/30 border-luminr-white/[0.16] mt-4 pb-8 rounded-t-3xl rounded-b-3xl`}
       >
-        <ul className="flex flex-col space-y-4 gap-2 mb-4">
+        <ul className="flex flex-col space-y-4 gap-2 mb-2 p-8">
           {navLinks.map((link) => (
             <li key={link.id}>
               <NavLink
@@ -216,7 +216,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="text-center scale-125 w-auto">
+        <div className="text-center scale-110 w-auto">
           <Appointment />
         </div>
       </div>
