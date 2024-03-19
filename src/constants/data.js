@@ -120,16 +120,6 @@ export const portfolioContents = [
     title: "Portfolio",
     portfolio: [
       {
-        id: "thehimalayanco",
-        title: "The Himalayan Co",
-        logo: "https://www.thehimalayan.co/wp-content/uploads/2023/07/The-Himalayan-Co-Logo.png.webp",
-        subtitle: "",
-        description: "",
-        image: himalyanco,
-        url: "https://www.thehimalayan.co/",
-      },
-
-      {
         id: "brandspark",
         title: "Brand Spark",
         subtitle: "",
@@ -146,6 +136,16 @@ export const portfolioContents = [
         image: tigg,
         url: "https://www.tiggapp.com/",
       },
+      {
+        id: "thehimalayanco",
+        title: "The Himalayan Co",
+        logo: "https://www.thehimalayan.co/wp-content/uploads/2023/07/The-Himalayan-Co-Logo.png.webp",
+        subtitle: "",
+        description: "",
+        image: himalyanco,
+        url: "https://www.thehimalayan.co/",
+      },
+
       {
         id: "vistamails",
         title: "Vista Mails",

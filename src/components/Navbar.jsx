@@ -87,11 +87,11 @@ const Navbar = () => {
               >
                 <NavLink
                   // to={link.url}
-                  className={`z-50 text-lg font-medium flex items-center ${
+                  className={`z-50 text-lg font-medium flex items-center hover:text-luminr-orange transition-color duration-300 ease-in-out" ${
                     (location.hash === `#${link.id}` ||
                       location.pathname === link.url ||
                       activeSection === link.id) &&
-                    "text-luminr-orange transition-color duration-300 ease-in-out"
+                    "text-luminr-orange transition-all duration-300 ease-in-out"
                   }`}
                   onClick={() => handleNavLinkClick(link.id)}
                 >

@@ -17,6 +17,11 @@
     scroll-behavior: smooth
   } */
 
+  ::selection {
+    color: #db6332;
+    background: #f2f3d9;
+  }
+
   footer,
   section {
     @apply py-16 md:py-28 px-4;
