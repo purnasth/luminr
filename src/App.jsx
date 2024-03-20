@@ -9,6 +9,7 @@ import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
 import BackToTopButton from "./components/BackToTopButton";
+import ProgressAnimation from "./components/ProgressAnimation";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <FAQ />
       <Footer />
       <BackToTopButton />
+      <ProgressAnimation />
     </Router>
   );
 };
